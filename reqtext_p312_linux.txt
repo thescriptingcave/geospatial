@@ -1,0 +1,217 @@
+# ============================================================
+# reqtext_p312_linux.txt — Python 3.12 / Linux x86_64
+# Derived from reqtext_p312_mac.txt with the following changes:
+#
+#   1. REMOVED pyobjc-core, pyobjc-framework-Cocoa — macOS only, 
+#      hard-fail on Linux.
+#
+#   2. REMOVED appnope — macOS only (prevents App Nap).
+#
+#   3. UPGRADED rasterio 1.4.4 → 1.5.0
+#      1.5.0 requires Python >=3.12. Now satisfied.
+#
+#   4. UPGRADED torch 2.7.1 → 2.12.0 + torchvision 0.22.1 → 0.27.0
+#      Latest stable pair, Python 3.12 wheels available on Linux.
+#
+#   5. UPGRADED numpy 2.2.6 → 2.4.6
+#      Latest stable, full Python 3.12 Linux wheels available.
+#
+#   6. UPGRADED imagecodecs 2025.3.30 → 2026.5.10
+#      Latest stable Linux wheel available.
+#
+#   7. UPGRADED tifffile 2025.3.30 → 2026.6.1
+#      Latest stable.
+#
+#   8. KEPT cffi==1.17.1 (cffi 2.0.0 still breaks rasterio/argon2).
+#   9. KEPT mpmath==1.3.0 (sympy 1.14.0 still requires mpmath<1.4).
+# ============================================================
+
+# --- Core scientific stack ---
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.0.3
+scikit-learn==1.9.0
+scikit-image==0.26.0
+sympy==1.14.0
+mpmath==1.3.0
+networkx==3.4.2
+joblib==1.5.3
+threadpoolctl==3.6.0
+
+# --- Deep learning ---
+torch==2.12.0
+torchvision==0.27.0
+optree==0.13.1
+
+# --- Computer vision ---
+opencv-python-headless==4.13.0.92
+pillow==11.2.1
+imageio==2.37.0
+tifffile==2026.6.1
+imagecodecs==2026.5.10
+lazy_loader==0.4
+
+# --- Geospatial ---
+geopandas==1.1.3
+shapely==2.1.2
+pyproj==3.7.2
+rasterio==1.5.0
+pyogrio==0.12.1
+osmnx==2.1.0
+folium==0.20.0
+branca==0.8.2
+mapclassify==2.10.0
+affine==2.4.0
+pystac==1.14.3
+pystac-client==0.9.0
+rio-vrt==0.3.1
+xyzservices==2025.11.0
+
+# --- Jupyter / notebook ---
+jupyter==1.1.1
+jupyterlab==4.5.8
+notebook==7.5.7
+notebook_shim==0.2.4
+jupyter_core==5.9.1
+jupyter_client==8.8.0
+jupyter_server==2.17.0
+jupyter_server_terminals==0.5.4
+jupyter-lsp==2.3.0
+jupyter-events==0.12.0
+jupyterlab_server==2.28.0
+jupyterlab_pygments==0.3.0
+jupyterlab_widgets==3.0.16
+ipykernel==7.2.0
+ipython==9.14.0
+ipywidgets==8.1.8
+widgetsnbextension==4.0.15
+ipython_pygments_lexers==1.1.1
+jupyter-console==6.6.3
+nbclient==0.10.4
+nbconvert==7.17.0
+nbformat==5.10.4
+nest_asyncio==1.6.0
+
+# --- HTTP / async ---
+httpx==0.28.1
+httpcore==1.0.9
+anyio==4.12.1
+sniffio==1.3.1
+h11==0.16.0
+h2==4.3.0
+hpack==4.1.0
+hyperframe==6.1.0
+websocket-client==1.9.0
+
+# --- Data formats / serialisation ---
+PyYAML==6.0.3
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+referencing==0.37.0
+rpds-py==0.30.0
+fastjsonschema==2.21.2
+jsonpointer==3.0.0
+json5==0.13.0
+
+# --- Templating / markup ---
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+bleach==6.3.0
+mistune==3.2.0
+tinycss2==1.4.0
+webencodings==0.5.1
+beautifulsoup4==4.14.3
+soupsieve==2.8.3
+pandocfilters==1.5.0
+
+# --- CLI / utilities ---
+click==8.3.1
+click-plugins==1.1.1.2
+cligj==0.7.2
+tqdm==4.67.3
+requests==2.32.5
+urllib3==2.6.3
+certifi==2026.2.25
+charset-normalizer==3.4.4
+idna==3.11
+PySocks==1.7.1
+
+# --- File / IO ---
+fsspec==2026.2.0
+filelock==3.24.3
+Send2Trash==2.1.0
+platformdirs==4.9.2
+packaging==26.0
+
+# --- IPython / display ---
+matplotlib==3.10.9
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.61.1
+kiwisolver==1.4.9
+pyparsing==3.3.2
+matplotlib-inline==0.2.1
+Pygments==2.19.2
+decorator==5.2.1
+jedi==0.19.2
+parso==0.8.6
+pexpect==4.9.0
+ptyprocess==0.7.0
+prompt_toolkit==3.0.52
+wcwidth==0.6.0
+asttokens==3.0.1
+executing==2.2.1
+pure_eval==0.2.3
+stack_data==0.6.3
+comm==0.2.3
+traitlets==5.14.3
+debugpy==1.8.20
+
+# --- Jupyter validation / events ---
+arrow==1.4.0
+fqdn==1.5.1
+isoduration==20.11.0
+rfc3339_validator==0.1.4
+rfc3986-validator==0.1.1
+rfc3987-syntax==1.1.0
+uri-template==1.3.0
+webcolors==25.10.0
+python-json-logger==2.0.7
+
+# --- Auth / crypto ---
+argon2-cffi==25.1.0
+argon2-cffi-bindings==25.1.0
+cffi==1.17.1
+pycparser==2.22
+
+# --- Misc ---
+attrs==25.4.0
+babel==2.18.0
+backports.zstd==1.3.0
+Brotli==1.2.0
+cached-property==1.5.2
+defusedxml==0.7.1
+gmpy2==2.2.1
+importlib_metadata==8.7.0
+importlib_resources==6.5.2
+lark==1.3.1
+overrides==7.7.0
+prometheus_client==0.24.1
+psutil==7.2.2
+pybind11==3.0.2
+pybind11-global==3.0.2
+python-dateutil==2.9.0.post0
+pytz==2025.2
+pyzmq==27.1.0
+session_info==1.0.1
+six==1.17.0
+snuggs==1.4.7
+stdlib-list==0.12.0
+terminado==0.18.1
+tornado==6.5.4
+typing_extensions==4.15.0
+typing_utils==0.1.0
+tzdata==2025.3
+unicodedata2==17.0.1
+zipp==3.23.0
+async-lru==2.2.0
