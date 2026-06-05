@@ -55,11 +55,11 @@ A geospatial Python environment for working with raster data, vector data, satel
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/geo_env.git
-cd geo_env
+git clone https://github.com/thescriptingcave/geospatial.git
+cd geospatial
 
 # 2. Create and activate a virtual environment with Python 3.11
-uv venv --python 3.11
+uv venv --python 3.12
 source .venv/bin/activate
 
 # 3. Install dependencies
@@ -70,8 +70,8 @@ uv pip install -r reqtext_p312_mac.txt
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/geo_env.git
-cd geo_env
+git clone https://github.com/thescriptingcave/geospatial.git
+cd geospatial
 
 # 2. Install Python 3.12 if not already available
 uv python install 3.12
