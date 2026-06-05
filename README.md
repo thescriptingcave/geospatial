@@ -1,4 +1,4 @@
-# geo_env
+# geospatial enviornment python 3.12
 
 A geospatial Python environment for working with raster data, vector data, satellite imagery, and machine learning. Built on top of GeoPandas, Rasterio, PyTorch, and JupyterLab.
 
@@ -8,7 +8,7 @@ A geospatial Python environment for working with raster data, vector data, satel
 
 | Platform | Python | File |
 |---|---|---|
-| macOS (Apple Silicon / Intel) | 3.11 | `reqtext_p312_mac.txt` |
+| macOS (Apple Silicon / Intel) | 3.12 | `reqtext_p312_mac.txt` |
 | Linux x86_64 | 3.12 | `reqtext_p312_linux.txt` |
 
 > **Note:** The two files differ because some packages (`pyobjc`, `appnope`) are macOS-only, and several packages like `rasterio 1.5.0` and `torch 2.12.0` require Python 3.12 which is only used on the Linux side.
